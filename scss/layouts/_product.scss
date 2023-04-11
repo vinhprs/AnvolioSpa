@@ -1,0 +1,45 @@
+.product {
+    padding: 5.6rem 24.8rem;
+    display: flex;
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+
+    &__steps {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        padding-bottom: 2.4rem;
+    }
+
+    &__step {
+        display: flex;
+        &--abc {
+            margin-left: .8rem;
+        }
+
+        &--number {
+            display: inline-block;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            width: 3.4rem;
+            height: 3.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &--number:not(:first-child) {
+            margin-left: -6rem;
+        }
+    }
+
+   
+
+    &__right {
+
+        &--img {
+            height: 36rem;
+        }
+    }
+}

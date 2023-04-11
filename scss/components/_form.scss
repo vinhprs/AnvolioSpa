@@ -1,0 +1,40 @@
+.contact {
+    padding: 5.6rem 0;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__form--form {
+        width: 20rem;
+        height: 2.8rem;
+        padding: 0 1.6rem;
+        font: $primary-font;
+        font-size: 1.16rem;
+        border-radius: .5rem;
+        border: none;
+        margin-right: 1.2rem;
+        color: $light-gray-text;
+    }
+
+    &__form--form:focus {
+        outline-color: #7ad6bc;
+        background-color: #eee;
+    }
+
+    &__form--btn {
+        padding: .64rem 1.12rem;
+        background-color: transparent;
+        border: 1px solid $white-color;
+        color: $white-color;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    &__form--btn:hover {
+        color: $primary-color;
+        background-color: $white-color;
+    }
+}

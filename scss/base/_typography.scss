@@ -1,0 +1,242 @@
+.nav__title {
+    color: $white-color;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.hero__content--italic {
+    font-size: 2rem;
+    font-family: $secondary-font;
+    letter-spacing: 1px;
+    font-weight: 100;
+    // text-align: center;
+}
+
+.hero__content--heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 5rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-size: 4.32rem;
+}
+
+.hero__content--normal {
+    font-size: 1.36rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+
+.booking__heading {
+    text-transform: uppercase;
+    font-size: 1.52rem;
+    color: $black-color-title;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-bottom: .8rem;
+}
+
+.booking_content {
+    font-size: 1.2rem;
+    color: $black-color-title;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+
+.slogan__content {
+    font-size: 1.84rem;
+    font-family: $secondary-font;
+    margin-bottom: .8rem;
+}
+
+.slogan__heading {
+    font-size: 1.92rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .8rem;
+}
+
+.expert__title--heading {
+    @extend .slogan__heading;
+    margin-bottom: .8rem;
+}
+
+.expert__title--content {
+    @extend .slogan__content;
+    color: $primary-color;
+}
+
+.expert__name {
+    margin-top: 2rem;
+    font-size: 1.28rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.expert__specialist {
+    font-size: 1.12rem;
+    color: $light-gray-text;
+    text-align: center;
+}
+
+.evaluate__title--content {
+    @extend .slogan__content;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.evaluate__title--heading {
+    @extend .slogan__heading;
+    margin-bottom: .8rem;
+    letter-spacing: .3rem;
+}
+
+.evaluate-quote__author-heading {
+    @extend .booking__heading;
+    margin: 0;
+}
+
+.evaluate-quote__content {
+    @extend .booking_content;
+}
+
+
+.number__quantity {
+    font-size: 4.56rem;
+    font-weight: 400;
+    line-height: 5.2rem;
+}
+
+.number__name {
+    font-size: 1.04rem;
+}
+
+.pricing__title--content {
+    @extend .expert__title--content;
+}
+
+.pricing__title--heading {
+    @extend .expert__title--heading;
+    letter-spacing: .3rem;
+}
+
+%pricing {
+    margin: 0;
+
+}
+
+.pricing__heading {
+   color: $black-color-sub-title;
+   font-size: 1.52rem;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.pricing__detail {
+   color: $black-color-detail;
+   font-size: 1.2rem;
+}
+
+.pricing__number {
+    font-size: 1.6rem;
+    color: $primary-color;
+    font-weight: 700;
+    font-family: $secondary-font;
+}
+
+.service__heading {
+    font-size: 1.68rem;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+}
+
+.service__info {
+    font-size: 1.12rem;
+    color: #eeeeee;
+    text-align: center;
+}
+
+.product__title--content {
+    @extend .expert__title--content;
+}
+
+.product__title--heading {
+    @extend .expert__title--heading;
+    letter-spacing: .3rem;
+}
+
+.product__title--desc {
+    font-size: 1.2rem;
+    color: $black-color-title;
+    
+}
+
+.product__step--number {
+    color: $primary-color;
+    font-size: 2rem;
+}
+
+.product__step--name {
+    font-size: 1.12rem;
+    color: $black-color-sub-title;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.product__step--detail {
+    font-size: 1.04rem;
+    color: $black-color-detail;
+
+}
+
+.contact__heading {
+    @extend .slogan__heading;
+    letter-spacing: .3rem;
+    margin-bottom: .8rem;
+}
+
+.contact__content {
+    @extend .booking_content;
+    margin-bottom: 1.6rem;
+}
+
+
+.footer__contact--heading {
+    @extend .booking__heading;
+}
+
+.footer__contact--content {
+    @extend .hero__content--normal;
+    font-weight: 400;
+}
+
+.footer__contact--content--primary {
+    @extend .hero__content--normal;
+    font-weight: 400;
+    color: $primary-color;
+}
+
+.footer__project--heading {
+    @extend .footer__contact--heading;
+    margin-bottom: 1.6rem;
+}
+
+.footer__project--link {
+    font-size: 1.28rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.footer__project--content {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}

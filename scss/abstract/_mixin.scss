@@ -1,0 +1,6 @@
+@mixin btn_hover($color, $distance) {
+    transform: translateY(-$distance);
+    box-shadow: 0.2rem 0.3rem 2rem rgba(0,0,0,0.3);
+    transition: all .4s ease-out;
+    background-color: $color;
+}

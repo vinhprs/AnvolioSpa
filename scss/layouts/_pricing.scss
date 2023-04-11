@@ -1,0 +1,53 @@
+.pricing {
+    padding: 5.6rem 28rem;
+    background-color: $gray-background;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 6.4rem;
+        &--divide {
+            height: 2rem;
+        }
+    }
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__each {
+        width: 47%;
+        padding-bottom: 1.6rem;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__each:nth-child(-n+6) {
+        border-bottom: .1rem solid rgba(0,0,0,0.2);
+    }
+
+    &__each:nth-last-child(-n+6) {
+        padding-top: 1.6rem;
+    }
+
+    &__hot {
+        position: absolute;
+        left: 35%;
+        top: 4%;
+        animation: bulgeUp 1s ease-in-out infinite;
+    }
+
+    &__popular {
+        position: absolute;
+        left: 40%;
+        top: 24%;
+        animation: bulgeUp 1s ease-in-out infinite;
+    }
+
+}

@@ -1,0 +1,134 @@
+.btn {
+    color: $white-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ;
+}
+
+.before-btn {
+    content: "";
+    width: 1.1rem;
+    height: 7rem;
+    background-color: $white-color;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .4s ;
+}
+
+.btn-animation1 {
+    @extend .btn;
+    background-color: $primary-color;
+    padding: 1.6rem 3.2rem;
+    font-size: 1.2rem;
+
+    &::before  {
+        @extend .before-btn;
+        transform: translateX(-100%);
+        animation: slipeOut 0.4s ease-in-out;
+    }
+
+    &:hover {
+        @include btn_hover($bold-orange, .6rem);
+    }
+
+
+    &:hover::before {
+        animation: slipeIn 0.4s ease-in-out;
+    }
+   
+}
+
+.booking__btn {
+    @extend .btn;
+    background-color: $secondary-color;
+    padding: .5rem 1.2rem;
+    font-size: 1.2rem;
+
+    &::before {
+        @extend .before-btn;
+        transform: translateX(-100%);
+        animation: slipeOut .4s ease-in-out;
+        
+    }
+
+    &:hover {
+        @include btn_hover($bold-green, .6rem);
+    }
+
+    &:hover::before {
+        animation: slipeIn .4s ease-in-out;
+    }
+}
+
+.pricing__hot {
+    background-color: $primary-color;
+    padding: .2rem .6rem;
+    font-size: .96rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.pricing__popular {
+    background-color: $secondary-color;
+    padding: .2rem .8rem;
+    font-size: .96rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.pricing__btn {
+    @extend .btn;
+    background-color: $primary-color;
+    padding: .5rem 1.4rem;
+    font-size: 1.2rem;
+    margin-top: 3.6rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before  {
+        @extend .before-btn;
+        transform: translateX(-100%);
+        animation: slipeOut 0.4s ease-in-out;
+    }
+
+    &:hover {
+        transform: translateY(-0.6rem) translate(-50%, -50%);
+        box-shadow: 0.2rem 0.3rem 2rem rgba(0,0,0,0.3);
+        transition: all .4s ease-out;
+        background-color: $bold-orange;
+    }
+
+
+    &:hover::before {
+        animation: slipeIn 0.4s ease-in-out;
+    }
+}
+
+.product__btn {
+    @extend .btn;
+    background-color: $secondary-color;
+    padding: .48rem 1.2rem;
+    font-size: 1.2rem;
+
+    &::before  {
+        @extend .before-btn;
+        transform: translateX(-100%);
+        animation: slipeOut 0.4s ease-in-out;
+    }
+
+    &:hover {
+        @include btn_hover($bold-green, .6rem);
+    }
+
+
+    &:hover::before {
+        animation: slipeIn 0.4s ease-in-out;
+    }
+}

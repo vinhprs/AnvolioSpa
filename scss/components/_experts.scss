@@ -1,0 +1,68 @@
+.expert {
+    padding: 80px 248px;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--divide {
+            height: 2rem;
+        }
+
+
+    }
+
+    &__list {
+        width: 100%;
+        padding-top: 6.4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        width: 25%;
+        float: left;
+    }
+
+    &__img {
+        width: 16rem;
+        height: 16rem;
+        border-radius: 50%;
+        transition: all .4s ease-in;
+
+        &-cap {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+    }
+
+    &__icon {
+        font-size: 5rem;
+        color: $secondary-color;
+        border: .15rem solid $secondary-color;
+        border-radius: 50%;
+        padding: 1.6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.2);
+        transition: all .4s .3s;
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+
+    }
+
+    &__card:hover &__img {
+        filter: blur(0.1rem) brightness(50%);
+    }
+
+    &__card:hover &__icon {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

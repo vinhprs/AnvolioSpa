@@ -1,0 +1,50 @@
+.evaluate {
+    padding: 8rem 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(../../img/evaluate.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6.4rem;
+
+        &--divide {
+            height: 2rem;
+        }
+    }
+
+    &-quote {
+        width: 60%;
+        position: relative;
+        &__character {
+            font-size: 6.4rem;
+            color: $white-color;
+            opacity: .8;
+            position: absolute;
+            top: -34%;
+            left: -3%;
+        }
+
+        &__author {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2.4rem;
+            &-img {
+                height: 5.6rem;
+                border-radius: 50%;
+                margin-right: 1.6rem;
+            }
+        }
+        
+    }
+}

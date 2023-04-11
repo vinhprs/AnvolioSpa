@@ -1,0 +1,40 @@
+@keyframes jumpup {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-.5rem);
+    }
+}
+
+@keyframes slipeIn {
+    from {
+        transform: translateX(-100%) rotate(30deg) translateY(-1.2rem);        
+    }
+    to {
+        transform: translateX(20rem) rotate(30deg) translateY(-1.2rem);
+    }
+}
+
+@keyframes slipeOut {
+    
+    from {
+        transform: translateX(20rem) rotate(30deg) translateY(-1.2rem);
+    }
+    to {
+        transform: translateX(-100%) rotate(30deg) translateY(-1.2rem);        
+    }
+}
+
+@keyframes bulgeUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 .2rem  .4rem rgba($color: black, $alpha: 0.4);
+    }
+    100% {
+        transform: scale3d(1);
+    }
+}

@@ -1,0 +1,18 @@
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: 8rem 24.8rem;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    &__icon {
+        height: 5.2rem;
+    }
+}
