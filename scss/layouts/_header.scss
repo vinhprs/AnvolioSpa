@@ -44,7 +44,7 @@
 
         &--item:hover &--link  {
             color: $primary-color;
-            transform: translateY(-0.5px);
+            transform: translateY(-0.5rem);
         }
 
         &--item:hover &--link::before {
