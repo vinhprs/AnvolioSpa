@@ -32,4 +32,29 @@ const loopQuoteList = () => {
 };
 
 setInterval(loopQuoteList, 3000)
-// console.log(author, content, img)
+
+// navbar responsive
+const bar = document.querySelector('.header__nav--responsive')
+const nav = document.querySelector('.header__nav');
+bar.addEventListener("click", () => {
+    let mq = window.matchMedia('(max-width: 50rem)');
+    console.log(nav)
+    // if(nav.style.display == "flex") {
+    //     nav.style.display == "none"
+    // }
+    // else {
+    //     if(mq.matches) {
+    //         nav.style.display = "flex";
+    //         nav.style.order = 1
+    //     }
+    // }
+    if(nav.classList.contains("display")) {
+       
+        nav.classList.remove("display")
+    } else {
+        if(mq.matches) {
+            nav.classList.add("display")
+            nav.style.order = 1
+       }
+    }
+})

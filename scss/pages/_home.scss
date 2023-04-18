@@ -1,8 +1,11 @@
 .hero-section {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../img/hero-background.jpeg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/hero-background.jpeg');
     background-size: cover;
     background-position: center;
     height: 95vh;
+    @include medium-width {
+        height: 100vh;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,22 +34,38 @@
 
 .booking {
     display: flex;
-    padding: 7.2rem 24.8rem;
+    padding: 7.2rem 0rem;
     flex-wrap: wrap;
-
+    // width: 65%;
+    margin: 0 24.8rem;
+    @include large-width {
+        margin: 0 23rem;
+    }
     &__img {
-
         &--1,
         &--2,
         &--3 {
             width: calc(100% / 3);
             float: left;
+            @include large-width {
+                width: calc(100% / 2);
+            }
         }
 
-        &::after {
-            content: "";
-            display: table;
-            clear: both;
+        &--1 {
+            @include large-width {
+                order: 1;
+            }
+        }
+        &--2 {
+            @include large-width {
+                order: 5;
+            }
+        }
+        &--3 {
+            @include large-width {
+                order: 4;
+            }
         }
 
     }
@@ -64,12 +83,26 @@
         &--3 {
             width: calc(100% / 3);
             float: left;
+            @include large-width {
+                width: calc(100% / 2);
+            }
+        }
+        &--1 {
+            @include large-width {
+                order: 2;
+            }
         }
 
-        &::after {
-            content: "";
-            display: table;
-            clear: both;
+        &--2 {
+            @include large-width {
+                order: 3;
+            }
+        }
+
+        &--3 {
+            @include large-width {
+                order: 6;
+            }
         }
     }
 }
@@ -83,16 +116,16 @@
 
 .slogan__img {
     &-1 {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/slogan1.jpeg);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan1.jpeg);
     }
 
     &-2 {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/slogan2.jpeg);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan2.jpeg);
         margin: 0 16px;
     }
 
     &-3 {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/slogan3.jpeg);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan3.jpeg);
     }
 
     &-1, &-2, &-3 {

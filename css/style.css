@@ -6,6 +6,10 @@
   color: #FFFFFF !important;
 }
 
+.display {
+  display: flex !important;
+}
+
 @keyframes jumpup {
   from {
     transform: translateY(0);
@@ -61,6 +65,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+@media only screen and (max-width: 50rem) {
+  body {
+    padding: 0;
+  }
+}
 
 .nav__title {
   color: #FFFFFF;
@@ -83,6 +92,11 @@ body {
   letter-spacing: 0.1rem;
   text-align: center;
   font-size: 4.32rem;
+}
+@media only screen and (max-width: 50rem) {
+  .hero__content--heading {
+    font-size: 3.12rem;
+  }
 }
 
 .hero__content--normal, .footer__contact--content--primary, .footer__contact--content {
@@ -267,7 +281,7 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/hero-background.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/hero-background.jpeg");
   background-size: cover;
   background-position: center;
   height: 95vh;
@@ -275,6 +289,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+@media only screen and (max-width: 50rem) {
+  .hero-section {
+    height: 100vh;
+  }
 }
 
 .hero__content {
@@ -296,17 +315,38 @@ body {
 
 .booking {
   display: flex;
-  padding: 7.2rem 24.8rem;
+  padding: 7.2rem 0rem;
   flex-wrap: wrap;
+  margin: 0 24.8rem;
+}
+@media only screen and (max-width: 65.625rem) {
+  .booking {
+    margin: 0 23rem;
+  }
 }
 .booking__img--1, .booking__img--2, .booking__img--3 {
   width: 33.3333333333%;
   float: left;
 }
-.booking__img::after {
-  content: "";
-  display: table;
-  clear: both;
+@media only screen and (max-width: 65.625rem) {
+  .booking__img--1, .booking__img--2, .booking__img--3 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .booking__img--1 {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .booking__img--2 {
+    order: 5;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .booking__img--3 {
+    order: 4;
+  }
 }
 .booking__card {
   padding: 2.4rem;
@@ -320,10 +360,25 @@ body {
   width: 33.3333333333%;
   float: left;
 }
-.booking__card::after {
-  content: "";
-  display: table;
-  clear: both;
+@media only screen and (max-width: 65.625rem) {
+  .booking__card--1, .booking__card--2, .booking__card--3 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .booking__card--1 {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .booking__card--2 {
+    order: 3;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .booking__card--3 {
+    order: 6;
+  }
 }
 
 .slogan {
@@ -333,14 +388,14 @@ body {
 }
 
 .slogan__img-1 {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/slogan1.jpeg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan1.jpeg);
 }
 .slogan__img-2 {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/slogan2.jpeg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan2.jpeg);
   margin: 0 16px;
 }
 .slogan__img-3 {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/slogan3.jpeg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan3.jpeg);
 }
 .slogan__img-1, .slogan__img-2, .slogan__img-3 {
   width: 33.3333333333%;
@@ -363,16 +418,45 @@ body {
   height: 8.8rem;
 }
 .header__right {
+  display: flex;
   margin-top: 1.8rem;
+}
+@media only screen and (max-width: 50rem) {
+  .header__right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 .header__nav {
   display: flex;
 }
+@media only screen and (max-width: 50rem) {
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+    margin-top: 2.4rem;
+  }
+}
 .header__nav--item {
   list-style: none;
 }
+@media only screen and (max-width: 50rem) {
+  .header__nav--item:not(:last-child) {
+    margin-bottom: 1.84rem;
+  }
+}
 .header__nav--item:not(:first-child) {
   margin-left: 5.6rem;
+}
+.header__nav--responsive {
+  font-size: 2.8rem;
+  display: none;
+}
+@media only screen and (max-width: 50rem) {
+  .header__nav--responsive {
+    display: block;
+  }
 }
 .header__nav--link {
   text-decoration: none;
@@ -401,7 +485,7 @@ body {
 
 .evaluate {
   padding: 8rem 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../img/evaluate.jpeg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/evaluate.jpeg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

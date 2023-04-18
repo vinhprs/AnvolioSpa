@@ -20,6 +20,9 @@
     letter-spacing: .1rem;
     text-align: center;
     font-size: 4.32rem;
+    @include medium-width {
+        font-size: 3.12rem;
+    }
 }
 
 .hero__content--normal {

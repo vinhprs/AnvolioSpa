@@ -12,6 +12,9 @@ html {
 
 body {
     padding: 1.6rem;
+    @include medium-width {
+        padding: 0;
+    }
     color: $white-color;
     font-family: $primary-font;
     font-weight: 400;

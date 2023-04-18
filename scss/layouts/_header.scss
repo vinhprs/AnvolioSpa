@@ -9,18 +9,43 @@
     }
 
     &__right {
+        display: flex;
         margin-top: 1.8rem;
+        @include medium-width {
+            flex-direction: column;
+            align-items: flex-end;
+        }
     }
 
     &__nav {
         display: flex;
+        @include medium-width {
+            flex-direction: column;
+            align-items: flex-end;
+            display: none;
+            margin-top: 2.4rem;
+        }
+    
         &--item {
             list-style: none;
-
+          
+            @include medium-width {
+                &:not(:last-child) {
+                    margin-bottom: 1.84rem;
+                }
+            }
             &:not(:first-child) {
                 margin-left: 5.6rem;
             }
 
+        }
+
+        &--responsive {
+            font-size: 2.8rem;
+            display: none;
+            @include medium-width {
+                display: block;
+            }
         }
 
 
@@ -51,5 +76,7 @@
             color: $primary-color;
             transform: scaleX(1);
         }
+
+      
     }
 }
