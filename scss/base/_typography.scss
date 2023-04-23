@@ -11,24 +11,35 @@
     letter-spacing: 1px;
     font-weight: 100;
     // text-align: center;
+    @include small {
+        font-size: 1.6rem;
+    }
 }
 
 .hero__content--heading {
     text-transform: uppercase;
     font-weight: 400;
-    line-height: 5rem;
+    line-height: 6.5rem;
     letter-spacing: .1rem;
     text-align: center;
     font-size: 4.32rem;
     @include medium-width {
         font-size: 3.12rem;
     }
+
+    @include small {
+        font-size: 2.496rem;
+        line-height: 4rem;
+    }
 }
 
 .hero__content--normal {
     font-size: 1.36rem;
-    letter-spacing: .1rem;
     font-weight: 300;
+    letter-spacing: .1rem;
+    @include small {
+        font-size: 1.088rem;
+    }
 }
 
 .booking__heading {
@@ -39,6 +50,9 @@
     text-align: center;
     letter-spacing: .1rem;
     margin-bottom: .8rem;
+    @include small {
+        font-size: 1.216rem;
+    }
 }
 
 .booking_content {
@@ -47,6 +61,10 @@
     font-weight: 400;
     text-align: center;
     margin-bottom: .8rem;
+    @include small {
+        font-size: .96rem;
+        margin-bottom: .64rem;
+    }
 }
 
 
@@ -54,6 +72,11 @@
     font-size: 1.84rem;
     font-family: $secondary-font;
     margin-bottom: .8rem;
+    text-transform: capitalize;
+    @include small {
+        font-size: 1.472rem;
+
+    }
 }
 
 .slogan__heading {
@@ -61,6 +84,11 @@
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .8rem;
+    letter-spacing: .3rem;
+
+    @include small {
+        font-size: 1.536rem;
+    }
 }
 
 .expert__title--heading {
@@ -85,6 +113,9 @@
     font-size: 1.12rem;
     color: $light-gray-text;
     text-align: center;
+    @include small {
+        margin-bottom: 2rem;
+    }
 }
 
 .evaluate__title--content {
@@ -117,6 +148,9 @@
 
 .number__name {
     font-size: 1.04rem;
+    @include medium-width {
+        margin-bottom: 2rem;
+    }
 }
 
 .pricing__title--content {
@@ -138,11 +172,17 @@
    font-size: 1.52rem;
    text-transform: uppercase;
    font-weight: 500;
+   @include small {
+    font-size: 1.216rem;
+}
 }
 
 .pricing__detail {
    color: $black-color-detail;
    font-size: 1.2rem;
+   @include small {
+    font-size: .96rem;
+}
 }
 
 .pricing__number {
@@ -167,17 +207,27 @@
 
 .product__title--content {
     @extend .expert__title--content;
+    @include small {
+        text-align: center
+    }
 }
 
 .product__title--heading {
     @extend .expert__title--heading;
     letter-spacing: .3rem;
+    margin-bottom: 3rem;
+    @include small {
+        text-align: center
+    }
 }
 
 .product__title--desc {
     font-size: 1.2rem;
     color: $black-color-title;
-    
+    @include small {
+        text-align: center;
+        font-size: .96rem;
+    }
 }
 
 .product__step--number {
@@ -190,18 +240,28 @@
     color: $black-color-sub-title;
     text-transform: uppercase;
     font-weight: 500;
+    @include small {
+        font-size: .896rem;
+    }
 }
 
 .product__step--detail {
     font-size: 1.04rem;
     color: $black-color-detail;
-
+    @include small {
+        font-size: .832rem;
+    }
 }
 
 .contact__heading {
     @extend .slogan__heading;
     letter-spacing: .3rem;
     margin-bottom: .8rem;
+    max-width: 80%;
+    @include medium-width {
+        display: block;
+        text-align: center;
+    }
 }
 
 .contact__content {
@@ -212,6 +272,7 @@
 
 .footer__contact--heading {
     @extend .booking__heading;
+    text-align: center;
 }
 
 .footer__contact--content {
@@ -228,6 +289,7 @@
 .footer__project--heading {
     @extend .footer__contact--heading;
     margin-bottom: 1.6rem;
+    text-align: left;
 }
 
 .footer__project--link {
@@ -236,6 +298,10 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: all .3s;
+    @include large-width {
+        display: block;
+        text-align: center;
+    }
 }
 
 .footer__project--content {

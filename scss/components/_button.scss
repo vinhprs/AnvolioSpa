@@ -25,6 +25,10 @@
     background-color: $primary-color;
     padding: 1.6rem 3.2rem;
     font-size: 1.2rem;
+    @include small {
+        font-size: .96rem;
+        padding: 1.28rem 2.56rem;
+    }
 
     &::before  {
         @extend .before-btn;
@@ -48,6 +52,10 @@
     background-color: $secondary-color;
     padding: .5rem 1.2rem;
     font-size: 1.2rem;
+    @include small {
+        font-size: .96rem;
+        padding: .384rem .96rem;
+    }
 
     &::before {
         @extend .before-btn;
@@ -71,6 +79,9 @@
     font-size: .96rem;
     text-transform: capitalize;
     font-weight: 500;
+    @include small {
+        font-size: .768rem;
+    }
 }
 
 .pricing__popular {
@@ -79,6 +90,9 @@
     font-size: .96rem;
     text-transform: capitalize;
     font-weight: 500;
+    @include small {
+        font-size: .768rem;
+    }
 }
 
 .pricing__btn {
@@ -91,6 +105,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include small {
+        font-size: .96rem;
+        padding: .384rem .96rem;
+    }
 
     &::before  {
         @extend .before-btn;
@@ -130,5 +148,14 @@
 
     &:hover::before {
         animation: slipeIn 0.4s ease-in-out;
+    }
+
+    @include small {
+        position: relative;
+        top: -8%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: .96rem;
+        padding: .384rem .96rem;
     }
 }

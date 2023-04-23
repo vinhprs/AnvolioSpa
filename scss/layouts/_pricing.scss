@@ -1,5 +1,11 @@
 .pricing {
     padding: 5.6rem 28rem;
+    @include large-width {
+        padding: 5.6rem 14rem;
+    }
+    @include small {
+        padding: 5.6rem 6rem;
+    }
     background-color: $gray-background;
     &__title {
         display: flex;
@@ -26,6 +32,9 @@
         align-items: center;
         justify-content: space-between;
         position: relative;
+        @include largest-width {
+            width: 100%;
+        }
     }
 
     &__each:nth-child(-n+6) {
@@ -36,11 +45,27 @@
         padding-top: 1.6rem;
     }
 
+    @include largest-width {
+        &__each:nth-child(-n+7) {
+            border-bottom: .1rem solid rgba(0,0,0,0.2);
+        }
+        
+        &__each:nth-last-child(-n+7) {
+            padding-top: 2.4rem;
+        }
+    }
+
     &__hot {
         position: absolute;
         left: 35%;
         top: 4%;
         animation: bulgeUp 1s ease-in-out infinite;
+        @include largest-width {
+            left: 13.7rem;
+        }
+        @include small {
+            left: 11rem;
+        }
     }
 
     &__popular {
@@ -48,6 +73,12 @@
         left: 40%;
         top: 24%;
         animation: bulgeUp 1s ease-in-out infinite;
+        @include largest-width {
+            left: 16rem;
+            top: 2.5rem;
+        }
+        @include small {
+            left: 13rem;
+        }
     }
-
 }

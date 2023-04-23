@@ -1,5 +1,5 @@
 .expert {
-    padding: 80px 248px;
+    padding: 8rem 0;
 
     &__title {
         display: flex;
@@ -10,8 +10,6 @@
         &--divide {
             height: 2rem;
         }
-
-
     }
 
     &__list {
@@ -19,11 +17,17 @@
         padding-top: 6.4rem;
         display: flex;
         justify-content: center;
+        @include small {
+            flex-wrap: wrap;
+        }
     }
 
     &__card {
-        width: 25%;
-        float: left;
+        width: 22.8rem;
+        @include small {
+            width: 50%;
+            float: left;
+        }
     }
 
     &__img {

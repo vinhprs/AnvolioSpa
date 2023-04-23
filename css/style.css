@@ -84,11 +84,16 @@ body {
   letter-spacing: 1px;
   font-weight: 100;
 }
+@media only screen and (max-width: 37.5rem) {
+  .hero__content--italic {
+    font-size: 1.6rem;
+  }
+}
 
 .hero__content--heading {
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 5rem;
+  line-height: 6.5rem;
   letter-spacing: 0.1rem;
   text-align: center;
   font-size: 4.32rem;
@@ -98,11 +103,22 @@ body {
     font-size: 3.12rem;
   }
 }
+@media only screen and (max-width: 37.5rem) {
+  .hero__content--heading {
+    font-size: 2.496rem;
+    line-height: 4rem;
+  }
+}
 
 .hero__content--normal, .footer__contact--content--primary, .footer__contact--content {
   font-size: 1.36rem;
-  letter-spacing: 0.1rem;
   font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .hero__content--normal, .footer__contact--content--primary, .footer__contact--content {
+    font-size: 1.088rem;
+  }
 }
 
 .booking__heading, .footer__contact--heading, .footer__project--heading, .evaluate-quote__author-heading {
@@ -114,6 +130,11 @@ body {
   letter-spacing: 0.1rem;
   margin-bottom: 0.8rem;
 }
+@media only screen and (max-width: 37.5rem) {
+  .booking__heading, .footer__contact--heading, .footer__project--heading, .evaluate-quote__author-heading {
+    font-size: 1.216rem;
+  }
+}
 
 .booking_content, .contact__content, .evaluate-quote__content {
   font-size: 1.2rem;
@@ -122,11 +143,23 @@ body {
   text-align: center;
   margin-bottom: 0.8rem;
 }
+@media only screen and (max-width: 37.5rem) {
+  .booking_content, .contact__content, .evaluate-quote__content {
+    font-size: 0.96rem;
+    margin-bottom: 0.64rem;
+  }
+}
 
 .slogan__content, .evaluate__title--content, .expert__title--content, .product__title--content, .pricing__title--content {
   font-size: 1.84rem;
   font-family: "Parisienne", cursive;
   margin-bottom: 0.8rem;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 37.5rem) {
+  .slogan__content, .evaluate__title--content, .expert__title--content, .product__title--content, .pricing__title--content {
+    font-size: 1.472rem;
+  }
 }
 
 .slogan__heading, .contact__heading, .evaluate__title--heading, .expert__title--heading, .product__title--heading, .pricing__title--heading {
@@ -134,6 +167,12 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .slogan__heading, .contact__heading, .evaluate__title--heading, .expert__title--heading, .product__title--heading, .pricing__title--heading {
+    font-size: 1.536rem;
+  }
 }
 
 .expert__title--heading, .product__title--heading, .pricing__title--heading {
@@ -156,6 +195,11 @@ body {
   font-size: 1.12rem;
   color: #b3b3b3;
   text-align: center;
+}
+@media only screen and (max-width: 37.5rem) {
+  .expert__specialist {
+    margin-bottom: 2rem;
+  }
 }
 
 .evaluate__title--content {
@@ -181,6 +225,11 @@ body {
 .number__name {
   font-size: 1.04rem;
 }
+@media only screen and (max-width: 50rem) {
+  .number__name {
+    margin-bottom: 2rem;
+  }
+}
 
 .pricing__title--heading {
   letter-spacing: 0.3rem;
@@ -192,10 +241,20 @@ body {
   text-transform: uppercase;
   font-weight: 500;
 }
+@media only screen and (max-width: 37.5rem) {
+  .pricing__heading {
+    font-size: 1.216rem;
+  }
+}
 
 .pricing__detail {
   color: #777;
   font-size: 1.2rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .pricing__detail {
+    font-size: 0.96rem;
+  }
 }
 
 .pricing__number {
@@ -218,13 +277,31 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 37.5rem) {
+  .product__title--content {
+    text-align: center;
+  }
+}
+
 .product__title--heading {
   letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .product__title--heading {
+    text-align: center;
+  }
 }
 
 .product__title--desc {
   font-size: 1.2rem;
   color: #555;
+}
+@media only screen and (max-width: 37.5rem) {
+  .product__title--desc {
+    text-align: center;
+    font-size: 0.96rem;
+  }
 }
 
 .product__step--number {
@@ -238,19 +315,40 @@ body {
   text-transform: uppercase;
   font-weight: 500;
 }
+@media only screen and (max-width: 37.5rem) {
+  .product__step--name {
+    font-size: 0.896rem;
+  }
+}
 
 .product__step--detail {
   font-size: 1.04rem;
   color: #777;
 }
+@media only screen and (max-width: 37.5rem) {
+  .product__step--detail {
+    font-size: 0.832rem;
+  }
+}
 
 .contact__heading {
   letter-spacing: 0.3rem;
   margin-bottom: 0.8rem;
+  max-width: 80%;
+}
+@media only screen and (max-width: 50rem) {
+  .contact__heading {
+    display: block;
+    text-align: center;
+  }
 }
 
 .contact__content {
   margin-bottom: 1.6rem;
+}
+
+.footer__contact--heading, .footer__project--heading {
+  text-align: center;
 }
 
 .footer__contact--content {
@@ -264,6 +362,7 @@ body {
 
 .footer__project--heading {
   margin-bottom: 1.6rem;
+  text-align: left;
 }
 
 .footer__project--link {
@@ -272,6 +371,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 65.625rem) {
+  .footer__project--link {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__project--content {
@@ -317,11 +422,19 @@ body {
   display: flex;
   padding: 7.2rem 0rem;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0 24.8rem;
 }
 @media only screen and (max-width: 65.625rem) {
   .booking {
-    margin: 0 23rem;
+    margin: 0 auto;
+    width: 57.6rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .booking {
+    margin: 0 auto;
+    width: 32rem;
   }
 }
 .booking__img--1, .booking__img--2, .booking__img--3 {
@@ -330,7 +443,14 @@ body {
 }
 @media only screen and (max-width: 65.625rem) {
   .booking__img--1, .booking__img--2, .booking__img--3 {
-    width: 50%;
+    width: 28.8rem;
+    height: 30.4rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .booking__img--1, .booking__img--2, .booking__img--3 {
+    width: 16rem;
+    height: 17.8rem;
   }
 }
 @media only screen and (max-width: 65.625rem) {
@@ -356,13 +476,25 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+@media only screen and (max-width: 37.5rem) {
+  .booking__card {
+    padding: 1.92rem;
+  }
+}
 .booking__card--1, .booking__card--2, .booking__card--3 {
   width: 33.3333333333%;
   float: left;
 }
 @media only screen and (max-width: 65.625rem) {
   .booking__card--1, .booking__card--2, .booking__card--3 {
-    width: 50%;
+    width: 28.8rem;
+    height: 30.4rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .booking__card--1, .booking__card--2, .booking__card--3 {
+    width: 16rem;
+    height: 17.8rem;
   }
 }
 @media only screen and (max-width: 65.625rem) {
@@ -386,6 +518,12 @@ body {
   width: 100%;
   height: 36rem;
 }
+@media only screen and (max-width: 50rem) {
+  .slogan {
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
 .slogan__img-1 {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan1.jpeg);
@@ -393,6 +531,12 @@ body {
 .slogan__img-2 {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan2.jpeg);
   margin: 0 16px;
+}
+@media only screen and (max-width: 50rem) {
+  .slogan__img-2 {
+    margin: 0;
+    background-position: unset !important;
+  }
 }
 .slogan__img-3 {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan3.jpeg);
@@ -407,6 +551,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 50rem) {
+  .slogan__img-1, .slogan__img-2, .slogan__img-3 {
+    width: 100%;
+    height: 56rem;
+  }
+}
 
 .header {
   display: flex;
@@ -417,6 +567,12 @@ body {
   margin-top: 1.6rem;
   height: 8.8rem;
 }
+@media only screen and (max-width: 37.5rem) {
+  .header__logo {
+    height: 7.04rem;
+    margin-top: 1.2rem;
+  }
+}
 .header__right {
   display: flex;
   margin-top: 1.8rem;
@@ -425,6 +581,11 @@ body {
   .header__right {
     flex-direction: column;
     align-items: flex-end;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .header__right {
+    margin-top: 1.2rem;
   }
 }
 .header__nav {
@@ -456,6 +617,11 @@ body {
 @media only screen and (max-width: 50rem) {
   .header__nav--responsive {
     display: block;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .header__nav--responsive {
+    font-size: 2.25rem;
   }
 }
 .header__nav--link {
@@ -533,7 +699,12 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #7ad6bc;
-  padding: 8rem 24.8rem;
+  padding: 8rem 0;
+}
+@media only screen and (max-width: 65.625rem) {
+  .numbers {
+    flex-wrap: wrap;
+  }
 }
 
 .number {
@@ -541,7 +712,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 22rem;
+}
+@media only screen and (max-width: 50rem) {
+  .number {
+    width: 35%;
+    float: left;
+  }
 }
 .number__icon {
   height: 5.2rem;
@@ -550,6 +727,16 @@ body {
 .pricing {
   padding: 5.6rem 28rem;
   background-color: #f0f0f0;
+}
+@media only screen and (max-width: 65.625rem) {
+  .pricing {
+    padding: 5.6rem 14rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .pricing {
+    padding: 5.6rem 6rem;
+  }
 }
 .pricing__title {
   display: flex;
@@ -575,11 +762,24 @@ body {
   justify-content: space-between;
   position: relative;
 }
+@media only screen and (max-width: 75rem) {
+  .pricing__each {
+    width: 100%;
+  }
+}
 .pricing__each:nth-child(-n+6) {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 .pricing__each:nth-last-child(-n+6) {
   padding-top: 1.6rem;
+}
+@media only screen and (max-width: 75rem) {
+  .pricing__each:nth-child(-n+7) {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  }
+  .pricing__each:nth-last-child(-n+7) {
+    padding-top: 2.4rem;
+  }
 }
 .pricing__hot {
   position: absolute;
@@ -587,11 +787,32 @@ body {
   top: 4%;
   animation: bulgeUp 1s ease-in-out infinite;
 }
+@media only screen and (max-width: 75rem) {
+  .pricing__hot {
+    left: 13.7rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .pricing__hot {
+    left: 11rem;
+  }
+}
 .pricing__popular {
   position: absolute;
   left: 40%;
   top: 24%;
   animation: bulgeUp 1s ease-in-out infinite;
+}
+@media only screen and (max-width: 75rem) {
+  .pricing__popular {
+    left: 16rem;
+    top: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .pricing__popular {
+    left: 13rem;
+  }
 }
 
 .serivces {
@@ -599,14 +820,29 @@ body {
   display: flex;
   width: 100%;
 }
+@media only screen and (max-width: 65.625rem) {
+  .serivces {
+    flex-wrap: wrap;
+  }
+}
 
 .service {
   width: 25%;
   position: relative;
 }
+@media only screen and (max-width: 65.625rem) {
+  .service {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 50rem) {
+  .service {
+    width: 50%;
+  }
+}
 .service__img {
   width: 100%;
-  height: 35rem;
+  height: auto;
 }
 .service__icon {
   color: #f29a7f;
@@ -649,8 +885,14 @@ body {
 }
 
 .product {
-  padding: 5.6rem 24.8rem;
+  padding: 5.6rem 0;
   display: flex;
+  max-width: 91.2rem;
+}
+@media only screen and (max-width: 65.625rem) {
+  .product {
+    flex-wrap: wrap;
+  }
 }
 .product__title {
   margin-bottom: 2.4rem;
@@ -661,8 +903,29 @@ body {
   width: 95%;
   padding-bottom: 2.4rem;
 }
+@media only screen and (max-width: 65.625rem) {
+  .product__steps {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 50rem) {
+  .product__steps {
+    max-width: 85%;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .product__steps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .product__step {
   display: flex;
+}
+@media only screen and (max-width: 37.5rem) {
+  .product__step {
+    margin-bottom: 2rem;
+  }
 }
 .product__step--abc {
   margin-left: 0.8rem;
@@ -680,8 +943,29 @@ body {
 .product__step--number:not(:first-child) {
   margin-left: -6rem;
 }
+@media only screen and (max-width: 65.625rem) {
+  .product__left {
+    max-width: 91%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .product__left {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .product__right {
+    margin: 0 auto;
+  }
+}
 .product__right--img {
   height: 36rem;
+}
+@media only screen and (max-width: 65.625rem) {
+  .product__right--img {
+    height: 28rem;
+  }
 }
 
 .btn, .product__btn, .pricing__btn, .booking__btn, .btn-animation1 {
@@ -711,6 +995,12 @@ body {
   padding: 1.6rem 3.2rem;
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 37.5rem) {
+  .btn-animation1 {
+    font-size: 0.96rem;
+    padding: 1.28rem 2.56rem;
+  }
+}
 .btn-animation1::before {
   transform: translateX(-100%);
   animation: slipeOut 0.4s ease-in-out;
@@ -729,6 +1019,12 @@ body {
   background-color: #7ad6bc;
   padding: 0.5rem 1.2rem;
   font-size: 1.2rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .booking__btn {
+    font-size: 0.96rem;
+    padding: 0.384rem 0.96rem;
+  }
 }
 .booking__btn::before {
   transform: translateX(-100%);
@@ -751,6 +1047,11 @@ body {
   text-transform: capitalize;
   font-weight: 500;
 }
+@media only screen and (max-width: 37.5rem) {
+  .pricing__hot {
+    font-size: 0.768rem;
+  }
+}
 
 .pricing__popular {
   background-color: #7ad6bc;
@@ -758,6 +1059,11 @@ body {
   font-size: 0.96rem;
   text-transform: capitalize;
   font-weight: 500;
+}
+@media only screen and (max-width: 37.5rem) {
+  .pricing__popular {
+    font-size: 0.768rem;
+  }
 }
 
 .pricing__btn {
@@ -769,6 +1075,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 37.5rem) {
+  .pricing__btn {
+    font-size: 0.96rem;
+    padding: 0.384rem 0.96rem;
+  }
 }
 .pricing__btn::before {
   transform: translateX(-100%);
@@ -802,9 +1114,19 @@ body {
 .product__btn:hover::before {
   animation: slipeIn 0.4s ease-in-out;
 }
+@media only screen and (max-width: 37.5rem) {
+  .product__btn {
+    position: relative;
+    top: -8%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 0.96rem;
+    padding: 0.384rem 0.96rem;
+  }
+}
 
 .expert {
-  padding: 80px 248px;
+  padding: 8rem 0;
 }
 .expert__title {
   display: flex;
@@ -821,9 +1143,19 @@ body {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 37.5rem) {
+  .expert__list {
+    flex-wrap: wrap;
+  }
+}
 .expert__card {
-  width: 25%;
-  float: left;
+  width: 22.8rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .expert__card {
+    width: 50%;
+    float: left;
+  }
 }
 .expert__img {
   width: 16rem;
@@ -909,8 +1241,25 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 65.625rem) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
 .footer__logo {
   height: 20rem;
+}
+@media only screen and (max-width: 75rem) {
+  .footer__logo {
+    height: 16rem;
+  }
+}
+@media only screen and (max-width: 65.625rem) {
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__contact--info {
   display: flex;
@@ -918,6 +1267,13 @@ body {
 .footer__contact-icon {
   font-size: 2rem;
   padding-right: 1.2rem;
+}
+@media only screen and (max-width: 65.625rem) {
+  .footer__project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

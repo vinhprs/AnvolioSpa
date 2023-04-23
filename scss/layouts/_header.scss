@@ -6,6 +6,10 @@
     &__logo{
         margin-top: 1.6rem;
         height: 8.8rem;
+        @include small {
+            height: 7.04rem;
+            margin-top: 1.2rem;
+        }
     }
 
     &__right {
@@ -14,6 +18,9 @@
         @include medium-width {
             flex-direction: column;
             align-items: flex-end;
+        }
+        @include small {
+            margin-top: 1.2rem;
         }
     }
 
@@ -45,6 +52,9 @@
             display: none;
             @include medium-width {
                 display: block;
+            }
+            @include small {
+                font-size: 2.25rem;
             }
         }
 

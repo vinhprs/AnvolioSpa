@@ -36,10 +36,15 @@
     display: flex;
     padding: 7.2rem 0rem;
     flex-wrap: wrap;
-    // width: 65%;
+    justify-content: center;
     margin: 0 24.8rem;
     @include large-width {
-        margin: 0 23rem;
+        margin: 0 auto;
+        width: 57.6rem;
+    }
+    @include small {
+        margin: 0 auto;
+        width: 32rem;
     }
     &__img {
         &--1,
@@ -48,7 +53,12 @@
             width: calc(100% / 3);
             float: left;
             @include large-width {
-                width: calc(100% / 2);
+                width: 28.8rem;
+                height: 30.4rem;
+            }
+            @include small {
+                width: 16rem;
+                height: 17.8rem;
             }
         }
 
@@ -77,14 +87,21 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
+        @include small {
+            padding: 1.92rem;
+        }
         &--1,
         &--2,
         &--3 {
             width: calc(100% / 3);
             float: left;
             @include large-width {
-                width: calc(100% / 2);
+                width: 28.8rem;
+                height: 30.4rem;
+            }
+            @include small {
+                width: 16rem;
+                height: 17.8rem;
             }
         }
         &--1 {
@@ -111,10 +128,15 @@
     display: flex;
     width: 100%;
     height: 36rem;
+    @include medium-width {
+        flex-direction: column;
+        height: 100%;
+    }
 }
 
 
 .slogan__img {
+    
     &-1 {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan1.jpeg);
     }
@@ -122,6 +144,10 @@
     &-2 {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slogan2.jpeg);
         margin: 0 16px;
+        @include medium-width {
+            margin: 0;
+            background-position: unset !important;
+        }
     }
 
     &-3 {
@@ -137,5 +163,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include medium-width {
+            width: 100%;
+            height: 56rem;
+        }
     }
+    
 }
