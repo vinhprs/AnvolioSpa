@@ -159,3 +159,24 @@
         padding: .384rem .96rem;
     }
 }
+
+.modal__btn {
+    @extend .btn;
+    background-color: $primary-color;
+    font-size: 1.2rem;
+    padding: 1.6rem 3.2rem;
+    &::before {
+        @extend .before-btn;
+        transform: translateX(-100%);
+        animation: slipeOut .4s ease-in-out;
+        
+    }
+
+    &:hover {
+        @include btn_hover($bold-orange, .6rem);
+    }
+
+    &:hover::before {
+        animation: slipeIn .4s ease-in-out;
+    }
+}

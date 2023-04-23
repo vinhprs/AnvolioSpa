@@ -58,3 +58,10 @@ bar.addEventListener("click", () => {
        }
     }
 })
+
+// modal
+const closeModal = document.querySelector('.modal__icon');
+const modal = document.querySelector('.modal');
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+})

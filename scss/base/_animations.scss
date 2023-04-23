@@ -38,3 +38,11 @@
         transform: scale3d(1);
     }
 }
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

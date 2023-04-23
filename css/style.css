@@ -46,6 +46,14 @@
     transform: scale3d(1);
   }
 }
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 *,
 *::before,
 *::after {
@@ -110,13 +118,13 @@ body {
   }
 }
 
-.hero__content--normal, .footer__contact--content--primary, .footer__contact--content {
+.hero__content--normal, .modal__content, .footer__contact--content--primary, .footer__contact--content {
   font-size: 1.36rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
 }
 @media only screen and (max-width: 37.5rem) {
-  .hero__content--normal, .footer__contact--content--primary, .footer__contact--content {
+  .hero__content--normal, .modal__content, .footer__contact--content--primary, .footer__contact--content {
     font-size: 1.088rem;
   }
 }
@@ -162,7 +170,7 @@ body {
   }
 }
 
-.slogan__heading, .contact__heading, .evaluate__title--heading, .expert__title--heading, .product__title--heading, .pricing__title--heading {
+.slogan__heading, .modal__heading, .contact__heading, .evaluate__title--heading, .expert__title--heading, .product__title--heading, .pricing__title--heading {
   font-size: 1.92rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -170,7 +178,7 @@ body {
   letter-spacing: 0.3rem;
 }
 @media only screen and (max-width: 37.5rem) {
-  .slogan__heading, .contact__heading, .evaluate__title--heading, .expert__title--heading, .product__title--heading, .pricing__title--heading {
+  .slogan__heading, .modal__heading, .contact__heading, .evaluate__title--heading, .expert__title--heading, .product__title--heading, .pricing__title--heading {
     font-size: 1.536rem;
   }
 }
@@ -385,6 +393,21 @@ body {
   margin-bottom: 2rem;
 }
 
+.modal__heading {
+  color: #444444;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.modal__content {
+  color: #444444;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 .hero-section {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/hero-background.jpeg");
   background-size: cover;
@@ -414,7 +437,7 @@ body {
 .hero__content--heading {
   padding-bottom: 2.4rem;
 }
-.hero__content--normal, .footer__contact--content, .footer__contact--content--primary {
+.hero__content--normal, .footer__contact--content, .footer__contact--content--primary, .modal__content {
   padding-bottom: 1.6rem;
 }
 
@@ -968,7 +991,7 @@ body {
   }
 }
 
-.btn, .product__btn, .pricing__btn, .booking__btn, .btn-animation1 {
+.btn, .modal__btn, .product__btn, .pricing__btn, .booking__btn, .btn-animation1 {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
@@ -978,7 +1001,7 @@ body {
   transition: all 0.4s;
 }
 
-.before-btn, .product__btn::before, .pricing__btn::before, .booking__btn::before, .btn-animation1::before {
+.before-btn, .modal__btn::before, .product__btn::before, .pricing__btn::before, .booking__btn::before, .btn-animation1::before {
   content: "";
   width: 1.1rem;
   height: 7rem;
@@ -1123,6 +1146,25 @@ body {
     font-size: 0.96rem;
     padding: 0.384rem 0.96rem;
   }
+}
+
+.modal__btn {
+  background-color: #f29a7f;
+  font-size: 1.2rem;
+  padding: 1.6rem 3.2rem;
+}
+.modal__btn::before {
+  transform: translateX(-100%);
+  animation: slipeOut 0.4s ease-in-out;
+}
+.modal__btn:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0.2rem 0.3rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-out;
+  background-color: #f78a5f;
+}
+.modal__btn:hover::before {
+  animation: slipeIn 0.4s ease-in-out;
 }
 
 .expert {
@@ -1274,6 +1316,40 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  animation: modalAppear 3s ease both;
+  animation-delay: 3s;
+}
+.modal__wrapper {
+  background-color: #FFFFFF;
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 3.2rem;
+  position: relative;
+  top: 23.5rem;
+}
+.modal__icon {
+  font-size: 1.8rem;
+  color: #7ad6bc;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.modal__icon:hover {
+  cursor: pointer;
+  color: #444444;
 }
 
 /*# sourceMappingURL=style.css.map */
